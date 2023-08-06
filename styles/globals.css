@@ -2,26 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.blue {
+  background-image: url("/images/blue.png");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.animate {
+  animation-name: animate;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.blue1 {
+  background-image: url("/images/blue-1.png");
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  margin-bottom: 20px;
+}
+
+@keyframes animate {
+  from {
+    transform: translateX(clamp(320px, 75vw, 1300px));
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  to {
+    transform: translateX(-1300px);
+  }
 }
