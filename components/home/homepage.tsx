@@ -110,7 +110,9 @@ export function Blue() {
             Especially In The Production Of An Artistic Work.
           </div>
         </div>
-        <img
+        <Image
+          width={120}
+          height={120}
           src="/images/both.png"
           alt=""
           className="w-[120px] h-auto mt-[-30px]"
@@ -127,15 +129,15 @@ export function Marquee() {
         <span className="text-white font-Sora font-semibold">
           GRAPHIC DESIGN
         </span>
-        <img src="/images/icon-1.png" alt="" />
+        <Image width={40} height={40} src="/images/icon-1.png" alt="" />
         <span className="text-white font-Sora font-semibold">UI/UX DESIGN</span>
-        <img src="/images/icon-1.png" alt="" />
+        <Image width={40} height={40} src="/images/icon-1.png" alt="" />
         <span className="text-white font-Sora font-semibold ">
           Brand Design
         </span>
-        <img src="/images/icon-1.png" alt="" />
+        <Image width={40} height={40} src="/images/icon-1.png" alt="" />
         <span className="text-white font-Sora font-semibold">Development</span>
-        <img src="/images/icon-1.png" alt="" />
+        <Image width={40} height={40} src="/images/icon-1.png" alt="" />
       </div>
     </div>
   );
@@ -159,13 +161,13 @@ export function About() {
           <span className="text-[#000000] text-[22px] font-bold font-Sora">
             Learn More
           </span>
-          <img src="/images/frame.png" alt="" />
+          <Image width={20} height={10} src="/images/frame.png" alt="" />
         </p>
       </div>
       <div>
         <div className="boder-b-[#C8C8C8] border-b-[2px]">
           <div className="flex gap-[10px] pb-[20px]">
-            <img src="/images/muhammed.png" alt="" />
+            <Image width={60} height={40} src="/images/muhammed.png" alt="" />
             <div>
               <div className="text-[#292929] font-Sora text-[clamp(18px,1.5vw,23px)] font-semibold">
                 Muhammad Sultan
@@ -183,7 +185,7 @@ export function About() {
         <div>
           <div className="pt-[20px]">
             <div className="flex gap-[10px] pb-[20px]">
-              <img src="/images/sodik.png" alt="" />
+              <Image width={60} height={40} src="/images/sodik.png" alt="" />
               <div>
                 <div className="text-[#292929] font-Sora text-[clamp(18px,1.5vw,23px)] font-semibold">
                   Andika Bagass
@@ -215,7 +217,13 @@ export function Blue1() {
               <b className="text-[#131313] font-Sora text-[clamp(40px,4vw,70px)] font-medium">
                 37,200
               </b>
-              <img src="/images/icon.png" className="w-[40px] h-auto" alt="" />
+              <Image
+                width={40}
+                height={40}
+                src="/images/icon.png"
+                className="w-[40px] h-auto"
+                alt=""
+              />
             </div>
             <p className="text-[#131313] font-Sora text-[19px] font-semibold ">
               Total Project We Have Completed
@@ -228,7 +236,13 @@ export function Blue1() {
               <b className="text-[#131313] font-Sora text-[clamp(40px,4vw,70px)] font-medium">
                 1800
               </b>
-              <img src="/images/icon.png" className="w-[40px] h-auto" alt="" />
+              <Image
+                width={40}
+                height={40}
+                src="/images/icon.png"
+                className="w-[40px] h-auto"
+                alt=""
+              />
             </div>
             <p className="text-[#131313] font-Sora text-[19px] font-semibold ">
               Experienced Core Team
@@ -241,7 +255,13 @@ export function Blue1() {
               <b className="text-[#131313] font-Sora text-[clamp(40px,4vw,70px)] font-medium">
                 15,300
               </b>
-              <img src="/images/icon.png" className="w-[40px] h-auto" alt="" />
+              <Image
+                width={40}
+                height={40}
+                src="/images/icon.png"
+                className="w-[40px] h-auto"
+                alt=""
+              />
             </div>
             <p className="text-[#131313] font-Sora text-[19px] font-semibold ">
               Our Satisfied Clients
@@ -258,13 +278,13 @@ export function Anmation() {
     <div className="bg-[#202224] overflow-hidden p-[20px] mb-[clamp(40px,6.25vw,100px)]">
       <div className="flex gap-[40px] animate items-center overflow-hidden">
         <span className="text-white font-Sora font-semibold">GET STARTED</span>
-        <img src="/images/icon-1.png" alt="" />
+        <Image width={40} height={40} src="/images/icon-1.png" alt="" />
         <span className="text-white font-Sora font-semibold">GET STARTED</span>
-        <img src="/images/icon-1.png" alt="" />
+        <Image width={40} height={40} src="/images/icon-1.png" alt="" />
         <span className="text-white font-Sora font-semibold ">GET STARTED</span>
-        <img src="/images/icon-1.png" alt="" />
+        <Image width={40} height={40} src="/images/icon-1.png" alt="" />
         <span className="text-white font-Sora font-semibold">GET STARTED</span>
-        <img src="/images/icon-1.png" alt="" />
+        <Image width={40} height={40} src="/images/icon-1.png" alt="" />
       </div>
     </div>
   );
@@ -276,28 +296,28 @@ const brands = [
     discription:
       "Our clients are companies, brands, andstartups that keep the world going ",
     urlx: "/images/icon-2.png",
-    urli: "images/brand.png",
+    urli: "/images/brand.png",
   },
   {
     name: "UI/UX Design",
     discription:
       "Our clients are companies, brands, andstartups that keep the world going ",
     urlx: "/images/black-arr.png",
-    urli: "images/uiux.png",
+    urli: "/images/uiux.png",
   },
   {
     name: "Logo Design",
     discription:
       "Our clients are companies, brands, andstartups that keep the world going ",
     urlx: "/images/icon-2.png",
-    urli: "images/design.png",
+    urli: "/images/design.png",
   },
   {
     name: "Development",
     discription:
       "Our clients are companies, brands, andstartups that keep the world going ",
     urlx: "/images/icon-2.png",
-    urli: "images/development.png",
+    urli: "/images/development.png",
   },
 ];
 
@@ -320,7 +340,7 @@ export function Ourservice() {
         {brands.map((brand) => (
           <div className="flex gap-[30px] items-center justify-between flex-wrap border-b-[#B0AAAA] border-b-[1px] py-[30px]">
             <div className="flex gap-[40px] items-center flex-wrap">
-              <img src={brand.urli} alt="" />
+              <Image width={300} height={150} src={brand.urli} alt="" />
               <div className="text-[#282828] font-Sora text-[clamp(22px,2vw,36px)]">
                 {brand.name}
               </div>
@@ -329,7 +349,7 @@ export function Ourservice() {
               <div className="max-w-[390px] text-[#696969] text-[19px] font-Sora">
                 {brand.discription}
               </div>
-              <img src={brand.urlx} alt="" />
+              <Image width={50} height={50} src={brand.urlx} alt="" />
             </div>
           </div>
         ))}
@@ -365,9 +385,27 @@ export function Our() {
 export function Last() {
   return (
     <div className="flex justify-between gap-[30px] flex-wrap w-[80%] m-auto pb-[50px]">
-      <img src="/images/square.png" alt="" className="w-[300px] h-auto" />
-      <img src="/images/square-1.png" alt="" className="w-[300px] h-auto" />
-      <img src="/images/square-2.png" alt="" className="w-[300px] h-auto" />
+      <Image
+        width={300}
+        height={300}
+        src="/images/square.png"
+        alt=""
+        className="w-[300px] h-auto"
+      />
+      <Image
+        width={300}
+        height={300}
+        src="/images/square-1.png"
+        alt=""
+        className="w-[300px] h-auto"
+      />
+      <Image
+        width={300}
+        height={300}
+        src="/images/square-2.png"
+        alt=""
+        className="w-[300px] h-auto"
+      />
     </div>
   );
 }
@@ -385,11 +423,11 @@ export function Hero() {
           </div>
         </div>
         <div className="flex justify-between gap-[20px] rounded-[35px] bg-[#006C99] py-[10px] px-[20px] items-center flex-wrap">
-          <img src="/images/icon-1.png" alt="" />
+          <Image width={50} height={50} src="/images/icon-1.png" alt="" />
           <div className="text-[#EEEEEE] text-[clamp(14px,1.8vw,28px)] font-Sora ">
             Tutordeck_creative@gmail.com
           </div>
-          <img src="/images/icon-1.png" alt="" />
+          <Image width={50} height={50} src="/images/icon-1.png" alt="" />
         </div>
       </div>
     </div>
