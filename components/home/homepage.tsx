@@ -338,7 +338,10 @@ export function Ourservice() {
       </div>
       <div className="pb-[100px]">
         {brands.map((brand) => (
-          <div className="flex gap-[30px] items-center justify-between flex-wrap border-b-[#B0AAAA] border-b-[1px] py-[30px]">
+          <div
+            className="flex gap-[30px] items-center justify-between flex-wrap border-b-[#B0AAAA] border-b-[1px] py-[30px]"
+            key={brand.name}
+          >
             <div className="flex gap-[40px] items-center flex-wrap">
               <Image width={300} height={150} src={brand.urli} alt="" />
               <div className="text-[#282828] font-Sora text-[clamp(22px,2vw,36px)]">
